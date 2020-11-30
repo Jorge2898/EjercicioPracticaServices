@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5fc3eece6b800b7f9cbfe96f"
+  },
+  "lineafact": [
+    {
+      "_id": "1",
+      "money": 200,
+      "cliente": 2,
+      "estados": "Pendiente"
+    }
+  ],
+  "estado": "Pendiente de Pago",
+  "total": 200,
+  "idcliente": 2,
+  "_class": "com.example.ejercicio.entidadesMongo.Facturas"
+},{
+  "_id": {
+    "$oid": "5fc3eedb6b800b7f9cbfe970"
+  },
+  "lineafact": [
+    {
+      "_id": "2",
+      "money": 450,
+      "cliente": 3,
+      "estados": "Pendiente"
+    }
+  ],
+  "estado": "Pendiente de Pago",
+  "total": 450,
+  "idcliente": 3,
+  "_class": "com.example.ejercicio.entidadesMongo.Facturas"
+},{
+  "_id": {
+    "$oid": "5fc3eef96b800b7f9cbfe971"
+  },
+  "lineafact": [
+    {
+      "_id": "3",
+      "money": 250,
+      "cliente": 1,
+      "estados": "Pendiente"
+    }
+  ],
+  "estado": "Pendiente de Pago",
+  "total": 250,
+  "idcliente": 1,
+  "_class": "com.example.ejercicio.entidadesMongo.Facturas"
+}]

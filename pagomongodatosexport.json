@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5fc3f3f43fac1c43501dbe3c"
+  },
+  "dinero": 250,
+  "estado": "Pendiente",
+  "idfactura": "5fc3eedb6b800b7f9cbfe970",
+  "_class": "com.example.ejercicio.entidadesMongo.Pagos"
+},{
+  "_id": {
+    "$oid": "5fc3f4483fac1c43501dbe3d"
+  },
+  "dinero": 150,
+  "estado": "Pendiente",
+  "idfactura": "5fc3eef96b800b7f9cbfe971",
+  "_class": "com.example.ejercicio.entidadesMongo.Pagos"
+},{
+  "_id": {
+    "$oid": "5fc3f45c3fac1c43501dbe3e"
+  },
+  "dinero": 350,
+  "estado": "Pendiente",
+  "idfactura": "5fc3eece6b800b7f9cbfe96f",
+  "_class": "com.example.ejercicio.entidadesMongo.Pagos"
+}]

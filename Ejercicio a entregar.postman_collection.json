@@ -1,0 +1,652 @@
+{
+	"info": {
+		"_postman_id": "e7b6d6dd-70cf-4fd0-96da-97ef3cf91950",
+		"name": "Ejercicio a entregar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mostrar todos los clientes ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"total\": 300,\r\n        \"estado\": \"Pendiente de Pago\",\r\n        \"lineafact\":[\r\n            {\r\n            \"money\":300,\r\n            \"cliente\": 3,\r\n            \"estados\": \"Pendiente\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar todos los clientes con sus direcciones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 7,\r\n        \"nombre\": \"Leo\",\r\n        \"estado\": \"Impagado\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/all/direccion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"all",
+						"direccion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Cliente con id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"total\": 300,\r\n        \"estado\": \"Pendiente de Pago\",\r\n        \"lineafact\":[\r\n            {\r\n            \"money\":300,\r\n            \"cliente\": 3,\r\n            \"estados\": \"Pendiente\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra un cliente con sus direcciones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"total\": 300,\r\n        \"estado\": \"Pendiente de Pago\",\r\n        \"lineafact\":[\r\n            {\r\n            \"money\":300,\r\n            \"cliente\": 3,\r\n            \"estados\": \"Pendiente\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/nombre/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"nombre",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca los clientes con ese nombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"total\": 300,\r\n        \"estado\": \"Pendiente de Pago\",\r\n        \"lineafact\":[\r\n            {\r\n            \"money\":300,\r\n            \"cliente\": 3,\r\n            \"estados\": \"Pendiente\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/busnombre/Linda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"busnombre",
+						"Linda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra los clientes por poblacion",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/poblacion/Bilbao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"poblacion",
+						"Bilbao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra los clientes con un estado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"dinero\": 350.0,\r\n        \"estado\": \"Pendiente\",\r\n        \"idfactura\": \"5fc3eece6b800b7f9cbfe96f\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/cliente/estado/Impagado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"cliente",
+						"estado",
+						"Impagado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra todas las facturas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"dinero\": 350.0,\r\n        \"estado\": \"Pendiente\",\r\n        \"idfactura\": \"5fc3eece6b800b7f9cbfe96f\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/api/factura/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"api",
+						"factura",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra factura por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"dinero\": 350.0,\r\n        \"estado\": \"Pendiente\",\r\n        \"idfactura\": \"5fc3eece6b800b7f9cbfe96f\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/api/factura/5fc3eedb6b800b7f9cbfe970",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"api",
+						"factura",
+						"5fc3eedb6b800b7f9cbfe970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Facturas por un estado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/api/factura/estado/Pendiente de Pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"api",
+						"factura",
+						"estado",
+						"Pendiente de Pago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Facturas por un importe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/api/factura/importe/200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"api",
+						"factura",
+						"importe",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Facturas por Id de un cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/api/factura/cliente/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"api",
+						"factura",
+						"cliente",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar todos los pagos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/5fc3f4483fac1c43501dbe3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"5fc3f4483fac1c43501dbe3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por un id de factura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/factura/5fc3eef96b800b7f9cbfe971",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"factura",
+						"5fc3eef96b800b7f9cbfe971"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por estado del pago",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/estado/Pendiente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"estado",
+						"Pendiente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por id del Cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/cliente/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"cliente",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por estado del Cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/cliente/estado/Pendiente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"cliente",
+						"estado",
+						"Pendiente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar pago por estado de factura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"idcliente\": 5,\r\n    \"poblacion\": \"Burgos\",\r\n    \"direccion\": \"Calle z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8077/api/pago/factura/estado/Pendiente de Pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"api",
+						"pago",
+						"factura",
+						"estado",
+						"Pendiente de Pago"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
