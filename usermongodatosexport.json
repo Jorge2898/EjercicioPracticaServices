@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "5fc63f0c4cc2197f86738f77"
+  },
+  "username": "Admin",
+  "password": "{bcrypt}$2a$10$lqjuBtYtB70nu54auJQi/OUIeTl8PtiisovlwISz4zpliV7iDVU0i",
+  "domain": "Admins",
+  "active": true,
+  "acexpired": true,
+  "lock": true,
+  "expire": true,
+  "roles": [
+    {
+      "role": "ROLE_ADMIN"
+    }
+  ],
+  "_class": "com.example.ejercicio.gateway.User"
+},{
+  "_id": {
+    "$oid": "5fc6437771826c4ad002c5b9"
+  },
+  "username": "Jorge",
+  "password": "{bcrypt}$2a$10$vF.SJAZenAB3d6dcKUs1He/WLi.VDB5JdDn2RP/uP4fuEA8csSoJG",
+  "domain": "Usuarios",
+  "active": true,
+  "acexpired": true,
+  "lock": true,
+  "expire": true,
+  "roles": [
+    {
+      "role": "ROLE_USER"
+    }
+  ],
+  "_class": "com.example.ejercicio.gateway.User"
+}]

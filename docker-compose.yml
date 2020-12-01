@@ -1,0 +1,63 @@
+version: "3.3"
+services:
+  Eureka:
+    ports: 
+        - "8761:8761"
+    container_name: "eureka-composer"    
+    image: eureka-image
+
+  Gateway:
+    ports:
+        - "8075:8075"
+    container_name: "gateway-composer"    
+    image: gateway-image
+ 
+  Mysql:
+    ports:
+        -"3307:3306"
+    container_name: "mysql-composer"    
+    image: mysql-image
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+    volumes:
+        -E:\curso2\mysql
+ 
+  Mongo:
+    ports:
+        -"27017:3306"
+    container_name: "mongo-composer"    
+    image: mongo-image
+
+    volumes:
+        -E:\curso3\mongo
+        
+  Admin:
+    ports:
+        -"8081:8081"
+    container_name: "admin-composer"    
+    image: admin-image
+    
+  Cliente:
+    ports:
+        -"8070:8070"
+    container_name: "cliente-composer"    
+    image: cliente-image
+    
+  Factura:
+    ports:
+        -"8076:8076"
+    container_name: "factura-composer"    
+    image: factura-image
+    
+  Visita:
+    ports:
+        -"8078:8078"
+    container_name: "visita-composer"    
+    image: visita-image
+  
+  Pago:
+    ports:
+        -"8077:8077"
+    container_name: "pago-composer"    
+    image: pago-image     
+    
